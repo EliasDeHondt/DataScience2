@@ -8,15 +8,15 @@
 ### Python Example:
 
 ```python
-from scipy.stats import binom
+from scipy.stats import binom as binomial # Binomial distribution
 
 n = 5  # Number of trials
 p = 0.3  # Probability of success in each trial
 
 # Probability of exactly k successes
 k = 2
-binom_pmf = binom.pmf(k, n, p)
-print(f"Probability of {k} successes: {binom_pmf:.4f}")
+binomial_pmf = binomial.pmf(k, n, p)
+print(f"Probability of {k} successes: {binomial_pmf:.4f}")
 
 ```
 
@@ -28,15 +28,15 @@ print(f"Probability of {k} successes: {binom_pmf:.4f}")
 ### Python Example:
 
 ```python
-from scipy.stats import norm
+from scipy.stats import norm as normal # Normal distribution
 
 mean = 50  # Mean
 std_dev = 10  # Standard deviation
 
 # Probability of a value less than 60
 x = 60
-norm_cdf = norm.cdf(x, mean, std_dev)
-print(f"Probability of a value less than {x}: {norm_cdf:.4f}")
+normal_cdf = normal.cdf(x, mean, std_dev)
+print(f"Probability of a value less than {x}: {normal_cdf:.4f}")
 ```
 
 ## Poisson Distribution
@@ -47,7 +47,7 @@ print(f"Probability of a value less than {x}: {norm_cdf:.4f}")
 ### Python Example:
 
 ```python
-from scipy.stats import poisson
+from scipy.stats import poisson as poisson # Poisson distribution
 
 lambda_ = 3  # Average frequency of events
 
