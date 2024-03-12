@@ -1,0 +1,11 @@
+items;transactionID
+{Printer,Cartridge,Ballpoint};1000123
+{Paper,Cartridge};1000124
+{Paper,Cartridge};1000125
+{Printer,Cartridge};1000126
+{Printer,Cartridge};1000127
+{Ballpoint};1000128
+{Paper,Cartridge,Ballpoint};1000129
+{Cartridge};1000130
+{Printer,Ballpoint};1000131
+{Paper};1000132
