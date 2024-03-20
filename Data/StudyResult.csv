@@ -1,0 +1,396 @@
+studentID;gender;residence;Education_Mother;study time;#participations;partying;Absences;Score1;Score2;Score3;Result
+1;F;City;Master;4,4;1;Several times a week;6;5;6;6;Fail
+2;F;City;Primary education;5,2;1;Once a week;4;5;5;6;Fail
+3;F;City;Primary education;4,7;4;Rarely;10;7;8;10;Fail
+4;F;City;Master;5,8;1;Rarely;2;15;14;15;Pass
+5;F;City;Bachelor;4,2;1;Rarely;4;6;10;10;Fail
+6;M;City;Master;5,1;1;Rarely;10;15;15;15;Pass
+7;M;City;Secondary education;5,3;1;Several times a week;0;12;12;11;Pass
+8;F;City;Master;3,9;1;Several times a week;6;6;5;6;Fail
+9;M;City;Bachelor;2,7;1;Rarely;0;16;18;19;Pass
+10;M;City;Bachelor;5,1;1;Never;0;14;15;15;Pass
+11;F;City;Master;3,9;1;Once a week;0;10;8;9;Fail
+12;F;City;Secondary education;7,4;1;Rarely;4;10;12;12;Pass
+13;M;City;Master;0,9;1;Once a week;2;14;14;14;Pass
+14;M;City;Master;5,7;1;Once a week;2;10;10;11;Pass
+15;M;City;Secondary education;4,8;1;Rarely;0;14;16;16;Pass
+16;F;City;Master;2,4;1;Several times a week;4;14;14;14;Pass
+17;F;City;Master;7,4;1;Once a week;6;13;14;14;Pass
+18;F;City;Bachelor;4,5;1;Rarely;4;8;10;10;Fail
+19;M;City;Bachelor;3;4;Every day;16;6;5;5;Fail
+20;M;City;Master;0,8;1;Once a week;4;8;10;10;Fail
+21;M;City;Master;5,8;1;Never;0;13;14;15;Pass
+22;M;City;Master;1,8;1;Rarely;0;12;15;15;Pass
+23;M;City;Master;4,7;1;Never;2;15;15;16;Pass
+24;M;City;Secondary education;5,7;1;Several times a week;0;13;13;12;Pass
+25;F;Countryside;Secondary education;6,7;1;Rarely;2;10;9;8;Fail
+26;F;City;Secondary education;2,9;3;Rarely;14;6;9;8;Fail
+27;M;City;Secondary education;2,1;1;Rarely;2;12;12;11;Pass
+28;M;City;Master;2,9;1;Several times a week;4;15;16;15;Pass
+29;M;City;Bachelor;4,6;1;Once a week;4;11;11;11;Pass
+30;M;City;Master;3,2;1;Every day;16;10;12;11;Pass
+31;M;City;Master;2,1;1;Rarely;0;9;11;12;Pass
+32;M;City;Master;4,1;1;Never;0;17;16;17;Pass
+33;M;Countryside;Master;2,1;1;Rarely;0;17;16;16;Pass
+34;M;City;Bachelor;3,4;1;Rarely;0;8;10;12;Pass
+35;M;City;Bachelor;3,8;1;Once a week;0;12;14;15;Pass
+36;F;City;Secondary education;3;1;Never;0;8;7;6;Fail
+37;M;City;Master;5,9;1;Once a week;2;15;16;18;Pass
+38;M;Countryside;Master;7,1;1;Once a week;7;15;16;15;Pass
+39;F;Countryside;Bachelor;4,5;1;Rarely;2;12;12;11;Pass
+40;F;Countryside;Secondary education;1,5;1;Never;8;14;13;13;Pass
+41;F;City;Secondary education;4,4;2;Once a week;25;7;10;11;Pass
+42;M;City;Master;2,2;1;Once a week;8;12;12;12;Pass
+43;M;City;Master;4,9;1;Once a week;2;19;18;18;Pass
+44;M;City;Secondary education;3,8;1;Never;0;8;8;11;Pass
+45;F;City;Secondary education;5,1;2;Once a week;14;10;10;9;Fail
+46;F;City;Master;3,6;1;Rarely;8;8;8;6;Fail
+47;F;City;Bachelor;3,5;1;Every day;12;11;12;11;Pass
+48;M;City;Master;8,2;1;Rarely;4;19;19;20;Pass
+49;M;City;Master;2,3;1;Once a week;2;15;15;14;Pass
+50;F;City;Master;3,6;2;Several times a week;2;7;7;7;Fail
+51;F;City;Secondary education;4,6;1;Once a week;2;12;13;13;Pass
+52;F;City;Master;2,2;1;Once a week;2;11;13;13;Pass
+53;M;City;Master;3,4;2;Every day;6;11;11;10;Fail
+54;F;City;Master;0;1;Several times a week;0;8;10;11;Pass
+55;F;City;Bachelor;3,9;1;Several times a week;6;10;13;13;Pass
+56;F;City;Secondary education;2,4;1;Several times a week;8;8;9;10;Fail
+57;F;City;Master;4,5;1;Rarely;0;14;15;15;Pass
+58;M;City;Master;5,3;1;Rarely;4;14;15;15;Pass
+59;M;City;Primary education;4,9;1;Rarely;2;9;10;9;Fail
+60;F;City;Master;3,5;1;Once a week;2;15;16;16;Pass
+61;F;Countryside;Master;5,7;1;Several times a week;6;10;11;11;Pass
+62;F;City;Primary education;3,7;1;Every day;6;10;8;11;Pass
+63;F;City;Primary education;4,6;1;Once a week;4;8;10;9;Fail
+64;F;City;Master;7,6;1;Several times a week;2;10;9;9;Fail
+65;F;City;Master;5,2;1;Several times a week;0;10;10;10;Fail
+66;F;City;Master;3,7;1;Once a week;2;16;15;15;Pass
+67;M;City;Master;6,1;1;Once a week;4;13;13;12;Pass
+68;F;City;Bachelor;9,6;1;Once a week;4;7;7;6;Fail
+69;F;Countryside;Secondary education;4,2;1;Once a week;2;8;9;8;Fail
+70;F;Countryside;Bachelor;9,3;1;Rarely;12;16;16;16;Pass
+71;M;City;Bachelor;7,7;1;Rarely;0;13;15;15;Pass
+72;M;City;Master;9,3;1;Once a week;0;10;10;10;Fail
+73;F;Countryside;Primary education;2,2;3;Several times a week;2;8;6;5;Fail
+74;M;City;Bachelor;2;1;Rarely;2;12;12;14;Pass
+75;F;City;Bachelor;2,8;1;Once a week;54;11;12;11;Pass
+76;M;City;Master;4;1;Once a week;6;9;9;10;Fail
+77;M;City;Master;7,2;1;Once a week;8;11;11;10;Fail
+78;F;City;Secondary education;6,1;1;Once a week;0;11;11;11;Pass
+79;M;City;Secondary education;2,3;4;Never;2;8;8;10;Fail
+80;F;City;Bachelor;2,5;1;Once a week;12;5;5;5;Fail
+81;M;City;Secondary education;0,6;1;Rarely;2;10;12;12;Pass
+82;M;City;Secondary education;7,9;1;Rarely;4;11;10;11;Pass
+83;F;City;Bachelor;4,6;1;Several times a week;10;7;6;6;Fail
+84;M;City;Secondary education;3,2;1;Once a week;4;15;15;15;Pass
+85;F;City;Primary education;5,7;1;Rarely;2;9;10;10;Fail
+86;F;City;Master;4,2;3;Several times a week;6;7;9;8;Fail
+87;F;City;Secondary education;3,5;1;Several times a week;4;8;7;6;Fail
+88;F;City;Master;5,4;1;Once a week;4;13;14;14;Pass
+89;M;City;Secondary education;4;2;Rarely;12;11;10;10;Fail
+90;M;City;Master;2,4;1;Once a week;18;8;6;7;Fail
+91;F;City;Bachelor;7,7;1;Once a week;0;7;7;8;Fail
+92;F;City;Master;2,1;1;Every day;4;16;17;18;Pass
+93;F;City;Bachelor;3,4;1;Once a week;4;7;6;6;Fail
+94;F;City;Master;2,5;1;Once a week;0;11;10;10;Fail
+95;M;City;Secondary education;6,1;1;Several times a week;6;11;13;14;Pass
+96;F;Countryside;Primary education;7,7;2;Rarely;2;7;10;10;Fail
+97;M;Countryside;Master;2,3;1;Once a week;2;11;15;15;Pass
+98;F;City;Secondary education;3,9;1;Every day;2;8;9;10;Fail
+99;F;City;Master;1,2;1;Several times a week;6;11;14;14;Pass
+100;F;City;Master;6,2;1;Every day;0;7;9;8;Fail
+101;M;City;Master;3,2;1;Every day;14;7;7;5;Fail
+102;M;City;Master;6,3;1;Once a week;0;16;17;17;Pass
+103;M;City;Master;2,9;1;Once a week;4;10;13;14;Pass
+104;F;City;Bachelor;4,3;1;Every day;26;7;6;6;Fail
+105;M;City;Bachelor;4,8;1;Several times a week;0;16;18;18;Pass
+106;F;City;Bachelor;7,2;1;Once a week;10;10;11;11;Pass
+107;F;City;Secondary education;8,1;1;Rarely;8;7;8;8;Fail
+108;M;City;Bachelor;6,8;1;Once a week;2;16;18;18;Pass
+109;M;Countryside;Master;9,9;1;Every day;6;10;13;13;Pass
+110;F;City;Master;7,3;1;Every day;4;14;15;16;Pass
+111;M;City;Master;0,9;1;Once a week;6;18;19;19;Pass
+112;F;Countryside;Bachelor;7,1;2;Rarely;0;7;10;10;Fail
+113;F;City;Secondary education;2,1;2;Rarely;6;10;13;13;Pass
+114;M;City;Master;1,6;1;Rarely;10;18;19;19;Pass
+115;M;Countryside;Secondary education;4,1;1;Rarely;8;9;9;9;Fail
+116;M;City;Master;5,4;1;Several times a week;2;15;15;16;Pass
+117;M;City;Master;4,7;1;Once a week;2;11;13;14;Pass
+118;M;City;Bachelor;2,6;1;Rarely;0;13;14;13;Pass
+119;M;Countryside;Primary education;4,4;2;Several times a week;20;9;7;8;Fail
+120;M;City;Bachelor;0,4;1;Once a week;6;14;13;13;Pass
+121;F;City;Primary education;4,7;1;Once a week;2;16;15;15;Pass
+122;M;City;Secondary education;7,4;1;Several times a week;6;16;14;15;Pass
+123;F;City;Secondary education;3,4;1;Rarely;2;13;13;13;Pass
+124;M;City;Master;3,1;1;Several times a week;18;14;11;13;Pass
+125;F;City;Secondary education;4,9;1;Several times a week;0;8;7;8;Fail
+126;M;City;Bachelor;1,2;1;Every day;0;13;13;12;Pass
+127;F;City;Bachelor;3,6;1;Rarely;0;7;10;11;Pass
+128;F;City;Geen;2,5;4;Rarely;2;7;8;9;Fail
+129;M;Countryside;Secondary education;3;3;Once a week;0;7;4;0;Fail
+130;M;Countryside;Master;1,9;1;Every day;8;18;18;18;Pass
+131;F;Countryside;Bachelor;5,3;3;Rarely;0;12;0;0;Fail
+132;F;City;Primary education;1,3;1;Once a week;0;8;0;0;Fail
+133;F;City;Secondary education;3,1;1;Several times a week;12;10;13;12;Pass
+134;F;City;Bachelor;1,6;1;Never;16;12;11;11;Pass
+135;M;Countryside;Bachelor;5,7;1;Once a week;0;9;0;0;Fail
+136;F;City;Master;5,4;1;Once a week;0;11;0;0;Fail
+137;M;Countryside;Bachelor;5,6;1;Every day;0;10;0;0;Fail
+138;F;City;Bachelor;3,1;3;Rarely;0;4;0;0;Fail
+139;M;City;Primary education;2,4;2;Several times a week;0;14;12;12;Pass
+140;F;City;Master;2;1;Rarely;0;16;16;15;Pass
+141;M;City;Master;7,1;1;Rarely;0;7;9;0;Fail
+142;M;City;Secondary education;1,5;3;Once a week;8;9;9;9;Fail
+143;F;City;Master;6;1;Rarely;2;9;11;11;Pass
+144;F;City;Primary education;3,8;1;Several times a week;2;14;14;13;Pass
+145;M;City;Secondary education;1,8;4;Every day;0;5;0;0;Fail
+146;F;City;Primary education;3,9;1;Rarely;0;8;11;11;Pass
+147;F;City;Bachelor;3,8;4;Rarely;0;6;7;0;Fail
+148;F;City;Primary education;5,5;1;Rarely;2;10;11;11;Pass
+149;M;City;Master;1,3;1;Rarely;0;7;6;0;Fail
+150;M;City;Secondary education;2;4;Every day;0;8;9;10;Fail
+151;M;City;Primary education;1;4;Every day;0;6;5;0;Fail
+152;M;City;Secondary education;1,2;2;Several times a week;6;12;13;14;Pass
+153;F;Countryside;Bachelor;5,8;3;Never;8;10;10;10;Fail
+154;M;City;Bachelor;1,9;4;Several times a week;0;5;0;0;Fail
+155;F;City;Master;1,4;1;Never;0;11;11;12;Pass
+156;M;Countryside;Secondary education;4;1;Several times a week;2;11;8;8;Fail
+157;M;Countryside;Primary education;1,2;1;Rarely;8;16;12;13;Pass
+158;F;Countryside;Primary education;1,6;4;Every day;6;9;8;10;Fail
+159;M;Countryside;Secondary education;1,6;1;Rarely;2;17;15;15;Pass
+160;M;City;Bachelor;2,7;2;Every day;4;10;12;12;Pass
+161;M;Countryside;Secondary education;1,1;3;Rarely;0;7;6;0;Fail
+162;M;Countryside;Bachelor;5;3;Several times a week;6;5;9;7;Fail
+163;M;City;Primary education;1,8;2;Several times a week;0;7;0;0;Fail
+164;M;City;Primary education;0,8;1;Once a week;2;10;10;10;Fail
+165;M;Countryside;Primary education;5,6;4;Every day;0;5;8;7;Fail
+166;M;City;Bachelor;2;2;Rarely;16;12;11;12;Pass
+167;M;City;Secondary education;2,2;1;Every day;4;10;10;10;Fail
+168;F;City;Master;2,1;1;Once a week;0;14;15;16;Pass
+169;F;City;Secondary education;2,8;1;Every day;0;6;7;0;Fail
+170;F;City;Master;4,1;1;Rarely;0;14;14;14;Pass
+171;M;City;Bachelor;0,9;3;Every day;0;6;5;0;Fail
+172;M;City;Primary education;3,7;1;Rarely;2;13;15;16;Pass
+173;M;City;Master;3,2;1;Several times a week;0;13;11;10;Fail
+174;F;City;Primary education;5,2;4;Every day;0;8;7;0;Fail
+175;F;City;Bachelor;5,1;1;Every day;4;10;11;9;Fail
+176;M;City;Master;5,3;1;Several times a week;4;10;9;9;Fail
+177;F;City;Secondary education;3,9;1;Several times a week;2;13;13;11;Pass
+178;M;City;Bachelor;2,8;1;Several times a week;4;6;5;6;Fail
+179;M;Countryside;Master;2;1;Once a week;10;10;8;9;Fail
+180;M;City;Master;3,5;1;Once a week;4;10;10;11;Pass
+181;M;City;Master;4,3;1;Once a week;10;9;8;8;Fail
+182;M;City;Bachelor;4,5;1;Once a week;2;12;13;12;Pass
+183;F;City;Secondary education;2,1;1;Rarely;0;16;17;17;Pass
+184;F;City;Bachelor;5,2;1;Once a week;56;9;9;8;Fail
+185;F;City;Bachelor;3;1;Rarely;14;12;13;12;Pass
+186;M;City;Bachelor;3,1;1;Several times a week;12;12;12;11;Pass
+187;M;City;Primary education;0,8;1;Once a week;2;11;12;11;Pass
+188;M;City;Secondary education;3,2;1;Once a week;0;15;15;15;Pass
+189;F;City;Bachelor;3,8;1;Once a week;6;8;7;9;Fail
+190;M;Countryside;Primary education;5,8;1;Once a week;4;8;9;10;Fail
+191;F;City;Secondary education;2,9;1;Once a week;10;11;12;13;Pass
+192;F;City;Primary education;2,8;1;Once a week;0;8;8;9;Fail
+193;M;City;Primary education;5,2;1;Several times a week;12;7;8;8;Fail
+194;M;Countryside;Bachelor;1,8;1;Rarely;8;8;9;10;Fail
+195;M;City;Secondary education;0,4;1;Once a week;0;13;14;14;Pass
+196;F;City;Secondary education;3;1;Rarely;0;14;15;15;Pass
+197;M;City;Master;2,7;1;Once a week;4;17;15;16;Pass
+198;M;Countryside;Bachelor;0,1;1;Several times a week;8;9;9;10;Fail
+199;F;City;Master;2,7;2;Several times a week;24;18;18;18;Pass
+200;F;City;Master;2,6;1;Rarely;0;9;9;10;Fail
+201;F;City;Master;5;1;Every day;2;16;16;16;Pass
+202;F;City;Secondary education;5,2;1;Once a week;6;8;10;10;Fail
+203;F;City;Primary education;4,9;1;Several times a week;4;9;9;10;Fail
+204;F;Countryside;Secondary education;1,6;1;Rarely;18;7;6;6;Fail
+205;F;Countryside;Secondary education;6,5;1;Every day;6;10;10;11;Pass
+206;F;City;Bachelor;4,2;2;Once a week;28;10;9;9;Fail
+207;F;City;Bachelor;4,7;4;Once a week;5;7;7;7;Fail
+208;F;City;Master;3,9;1;Rarely;10;11;12;13;Pass
+209;F;City;Primary education;0,1;1;Rarely;6;9;9;10;Fail
+210;F;Countryside;Master;6,4;1;Rarely;6;7;7;7;Fail
+211;F;City;Bachelor;9;1;Once a week;10;8;8;8;Fail
+212;M;City;Master;2,5;1;Every day;13;12;12;13;Pass
+213;F;City;Secondary education;5;1;Several times a week;0;12;13;14;Pass
+214;M;City;Secondary education;3;2;Several times a week;15;6;7;8;Fail
+215;F;Countryside;Master;0,9;1;Never;12;8;10;10;Fail
+216;F;City;Bachelor;5,4;1;Several times a week;2;14;15;15;Pass
+217;F;City;Master;4,5;3;Every day;22;6;6;4;Fail
+218;M;City;Bachelor;4,8;2;Several times a week;13;6;6;8;Fail
+219;F;City;Secondary education;3,5;1;Once a week;3;7;7;8;Fail
+220;F;City;Secondary education;7;1;Once a week;4;9;10;10;Fail
+221;F;Countryside;Secondary education;3,9;1;Every day;2;6;6;6;Fail
+222;F;City;Primary education;4,2;2;Several times a week;0;6;5;0;Fail
+223;F;City;Secondary education;5,2;1;Never;2;16;16;17;Pass
+224;M;City;Secondary education;3,2;1;Once a week;0;12;13;13;Pass
+225;F;City;Master;6,2;1;Rarely;0;13;13;14;Pass
+226;F;Countryside;Bachelor;4,7;2;Once a week;16;9;8;7;Fail
+227;F;City;Bachelor;3,7;1;Several times a week;10;16;15;15;Pass
+228;M;City;Secondary education;3,3;1;Once a week;2;12;11;12;Pass
+229;M;City;Secondary education;2;1;Rarely;14;10;8;9;Fail
+230;F;City;Secondary education;7,6;1;Once a week;10;12;10;12;Pass
+231;F;City;Master;4,1;1;Once a week;14;13;13;14;Pass
+232;M;Countryside;Secondary education;4,6;1;Rarely;4;11;11;11;Pass
+233;M;City;Master;4,5;1;Every day;14;11;9;9;Fail
+234;M;City;Master;2,3;1;Several times a week;2;14;13;13;Pass
+235;M;City;Primary education;4;1;Rarely;18;9;7;6;Fail
+236;M;City;Bachelor;4,1;1;Once a week;10;11;9;10;Fail
+237;M;City;Secondary education;3,1;1;Rarely;4;14;13;13;Pass
+238;F;City;Secondary education;2;1;Rarely;20;13;12;12;Pass
+239;F;Countryside;Secondary education;3,2;1;Never;2;13;11;11;Pass
+240;M;City;Secondary education;3;2;Several times a week;0;7;7;0;Fail
+241;M;City;Master;4,6;1;Every day;14;12;12;12;Pass
+242;M;Countryside;Master;3,5;1;Once a week;2;10;11;12;Pass
+243;M;City;Master;0,4;1;Every day;0;6;0;0;Fail
+244;M;City;Master;1,4;1;Rarely;0;13;12;12;Pass
+245;F;City;Secondary education;6,3;1;Several times a week;0;7;0;0;Fail
+246;M;City;Secondary education;1,2;1;Once a week;6;18;18;18;Pass
+247;M;City;Secondary education;1,7;1;Rarely;4;12;12;13;Pass
+248;M;City;Bachelor;2,3;4;Every day;16;6;8;8;Fail
+249;M;Countryside;Bachelor;5,5;2;Once a week;8;3;5;5;Fail
+250;M;City;Geen;1,8;1;Rarely;0;13;15;15;Pass
+251;M;City;Bachelor;1,8;2;Every day;0;6;8;8;Fail
+252;M;City;Bachelor;4,3;1;Once a week;6;7;10;10;Fail
+253;M;City;Secondary education;2,7;2;Every day;4;6;9;8;Fail
+254;M;Countryside;Secondary education;2,4;1;Rarely;0;8;9;8;Fail
+255;M;Countryside;Secondary education;3,8;1;Rarely;0;8;12;12;Pass
+256;M;City;Primary education;2,5;2;Several times a week;2;7;9;8;Fail
+257;F;City;Master;9;1;Once a week;6;14;12;13;Pass
+258;M;City;Master;4;1;Never;12;11;11;11;Pass
+259;M;City;Secondary education;2,6;1;Several times a week;8;15;14;14;Pass
+260;F;City;Secondary education;9,8;1;Never;0;10;9;0;Fail
+261;F;City;Master;2,3;1;Rarely;21;17;18;18;Pass
+262;M;City;Master;5,9;1;Rarely;2;8;8;8;Fail
+263;M;Countryside;Bachelor;7,7;1;Rarely;1;13;12;12;Pass
+264;F;City;Bachelor;4,3;1;Once a week;4;10;9;9;Fail
+265;F;City;Secondary education;6,1;1;Once a week;0;9;10;0;Fail
+266;M;Countryside;Bachelor;4,6;1;Every day;13;17;17;17;Pass
+267;M;City;Bachelor;4,4;1;Several times a week;2;9;9;10;Fail
+268;F;Countryside;Master;5,2;1;Several times a week;8;12;10;11;Pass
+269;M;City;Master;3,9;1;Every day;10;10;9;10;Fail
+270;F;Countryside;Secondary education;3,6;1;Every day;0;6;0;0;Fail
+271;F;City;Bachelor;2,3;3;Every day;15;9;9;9;Fail
+272;F;City;Secondary education;8,8;1;Every day;4;15;14;14;Pass
+273;F;City;Primary education;3;1;Once a week;2;11;11;11;Pass
+274;M;Countryside;Primary education;4,5;1;Rarely;2;15;14;14;Pass
+275;F;City;Secondary education;4,3;1;Once a week;2;10;10;10;Fail
+276;F;City;Secondary education;2,7;1;Several times a week;6;12;12;12;Pass
+277;F;Countryside;Bachelor;5;1;Never;75;10;9;9;Fail
+278;M;City;Master;0,4;1;Several times a week;22;9;9;9;Fail
+279;F;City;Master;4,3;2;Several times a week;15;9;8;8;Fail
+280;M;City;Master;2,9;1;Once a week;8;10;11;10;Fail
+281;M;City;Master;3,9;1;Several times a week;30;8;8;8;Fail
+282;M;City;Bachelor;0,4;2;Several times a week;19;11;9;10;Fail
+283;F;Countryside;Primary education;6,9;1;Rarely;1;12;12;12;Pass
+284;F;City;Primary education;5,9;1;Several times a week;4;8;9;10;Fail
+285;F;City;Secondary education;3,2;1;Every day;4;10;9;11;Pass
+286;M;City;Primary education;2,6;1;Once a week;2;12;10;11;Pass
+287;F;City;Secondary education;4,3;1;Once a week;5;18;18;19;Pass
+288;F;City;Primary education;5,6;1;Once a week;6;13;12;12;Pass
+289;M;City;Secondary education;4,1;1;Several times a week;6;15;14;14;Pass
+290;M;City;Master;2;1;Once a week;9;15;13;15;Pass
+291;M;City;Master;2,2;1;Rarely;11;12;11;11;Pass
+292;F;City;Master;5,6;1;Rarely;0;15;15;15;Pass
+293;F;City;Secondary education;3,7;2;Once a week;12;12;12;13;Pass
+294;F;Countryside;Bachelor;7,2;1;Rarely;6;18;18;18;Pass
+295;M;Countryside;Bachelor;6,5;1;Rarely;8;14;13;14;Pass
+296;M;City;Bachelor;1,2;1;Once a week;4;14;12;11;Pass
+297;F;City;Master;4,1;1;Several times a week;0;10;9;0;Fail
+298;F;City;Master;5,4;1;Every day;10;10;8;8;Fail
+299;F;City;Master;6,3;1;Once a week;0;14;13;14;Pass
+300;M;City;Master;3,6;1;Rarely;5;16;15;16;Pass
+301;F;City;Master;2,7;1;Several times a week;14;12;10;11;Pass
+302;M;City;Master;3,4;1;Never;0;11;11;10;Fail
+303;F;City;Master;6,6;1;Once a week;0;15;12;14;Pass
+304;F;City;Bachelor;7,1;1;Rarely;0;17;17;18;Pass
+305;M;City;Bachelor;2,2;2;Several times a week;20;15;14;13;Pass
+306;F;City;Secondary education;2,6;2;Once a week;8;14;12;12;Pass
+307;M;City;Bachelor;2;1;Once a week;0;17;18;18;Pass
+308;M;City;Master;0,2;2;Several times a week;38;8;9;8;Fail
+309;M;Countryside;Bachelor;5,1;2;Once a week;0;15;12;12;Pass
+310;F;City;Primary education;5;2;Once a week;18;12;10;10;Fail
+311;F;City;Primary education;3,8;2;Several times a week;0;9;9;0;Fail
+312;F;City;Secondary education;3,4;1;Never;20;14;12;13;Pass
+313;M;City;Primary education;3;2;Rarely;3;13;11;11;Pass
+314;F;City;Bachelor;4,4;2;Rarely;22;13;10;11;Pass
+315;F;City;Primary education;7,5;3;Rarely;14;15;13;13;Pass
+316;F;Countryside;Secondary education;6,7;2;Rarely;40;13;11;11;Pass
+317;F;City;Secondary education;4;1;Once a week;0;8;8;0;Fail
+318;F;City;Master;6,9;1;Several times a week;9;9;10;9;Fail
+319;F;Countryside;Bachelor;4,1;1;Several times a week;0;11;11;10;Fail
+320;F;City;Master;3,4;1;Several times a week;2;11;11;11;Pass
+321;F;City;Master;5,7;1;Rarely;23;13;13;13;Pass
+322;F;City;Secondary education;2,7;1;Rarely;12;11;9;9;Fail
+323;F;Countryside;Secondary education;5,6;1;Rarely;3;11;11;11;Pass
+324;F;City;Bachelor;5,7;1;Once a week;1;12;14;15;Pass
+325;F;City;Geen;5,7;1;Once a week;0;16;15;15;Pass
+326;M;City;Master;6,5;1;Once a week;3;9;12;11;Pass
+327;M;City;Bachelor;1,6;1;Every day;3;14;15;16;Pass
+328;M;Countryside;Secondary education;2,9;1;Every day;8;11;10;10;Fail
+329;F;City;Master;5,4;1;Several times a week;7;10;9;9;Fail
+330;F;City;Master;6,1;1;Once a week;4;14;14;14;Pass
+331;M;City;Secondary education;8,7;1;Every day;2;9;8;8;Fail
+332;F;Countryside;Secondary education;5,3;1;Once a week;7;12;14;14;Pass
+333;F;City;Bachelor;2,6;1;Several times a week;0;7;0;0;Fail
+334;F;City;Secondary education;4,7;1;Once a week;0;8;8;0;Fail
+335;F;Countryside;Secondary education;6,6;1;Several times a week;0;10;9;0;Fail
+336;F;City;Bachelor;5,4;1;Every day;16;16;15;15;Pass
+337;F;Countryside;Bachelor;7,4;2;Once a week;12;14;13;13;Pass
+338;F;City;Bachelor;4,6;1;Rarely;0;7;8;0;Fail
+339;F;City;Bachelor;7,4;1;Once a week;7;16;15;17;Pass
+340;F;Countryside;Bachelor;3;1;Once a week;4;9;10;10;Fail
+341;F;City;Secondary education;6,9;2;Several times a week;4;11;12;11;Pass
+342;M;City;Master;4,3;2;Once a week;0;10;10;0;Fail
+343;M;City;Bachelor;3;1;Once a week;11;16;15;15;Pass
+344;F;City;Secondary education;4,4;2;Never;0;9;8;0;Fail
+345;F;City;Secondary education;7,5;1;Once a week;4;11;10;10;Fail
+346;F;City;Bachelor;7,3;1;Once a week;7;13;13;14;Pass
+347;M;Countryside;Master;6,4;1;Rarely;9;16;15;16;Pass
+348;M;City;Master;7,2;1;Every day;0;10;10;9;Fail
+349;F;City;Master;7,8;1;Once a week;0;13;15;15;Pass
+350;M;Countryside;Bachelor;2,5;2;Every day;10;11;13;13;Pass
+351;M;Countryside;Primary education;5,3;4;Several times a week;8;8;7;8;Fail
+352;M;City;Bachelor;5,6;1;Several times a week;2;13;13;13;Pass
+353;M;City;Primary education;2;2;Once a week;7;8;7;8;Fail
+354;M;Countryside;Primary education;2,5;2;Several times a week;4;8;8;8;Fail
+355;M;Countryside;Master;2,4;1;Every day;4;13;11;11;Pass
+356;F;City;Bachelor;3,3;1;Several times a week;0;10;9;9;Fail
+357;F;Countryside;Master;4,6;1;Once a week;4;12;13;13;Pass
+358;F;City;Bachelor;3,7;1;Once a week;2;12;12;11;Pass
+359;M;City;Primary education;0,2;1;Rarely;4;10;10;10;Fail
+360;F;City;Primary education;7,7;1;Rarely;0;18;16;16;Pass
+361;F;Countryside;Primary education;3,6;1;Several times a week;0;13;13;13;Pass
+362;M;Countryside;Primary education;4,1;2;Once a week;2;13;12;12;Pass
+363;F;City;Bachelor;5,9;1;Rarely;0;11;11;10;Fail
+364;F;City;Master;3,5;1;Several times a week;0;16;15;15;Pass
+365;F;Countryside;Primary education;3,7;1;Rarely;0;12;11;12;Pass
+366;M;Countryside;Primary education;3,9;1;Several times a week;4;10;10;10;Fail
+367;M;City;Master;7,3;1;Rarely;0;13;13;13;Pass
+368;F;Countryside;Primary education;3,3;2;Never;0;7;6;0;Fail
+369;F;City;Secondary education;1,5;1;Once a week;0;11;10;10;Fail
+370;F;Countryside;Master;4,6;1;Rarely;10;14;12;11;Pass
+371;F;City;Bachelor;5,2;3;Rarely;4;7;7;9;Fail
+372;M;Countryside;Primary education;2,7;1;Once a week;3;14;12;12;Pass
+373;F;City;Secondary education;7,6;1;Once a week;8;13;11;11;Pass
+374;F;Countryside;Primary education;2,7;1;Every day;14;6;5;5;Fail
+375;F;Countryside;Master;5,7;1;Several times a week;0;19;18;19;Pass
+376;F;Countryside;Primary education;7,3;1;Rarely;2;8;8;10;Fail
+377;F;City;Master;6,1;3;Once a week;4;15;14;15;Pass
+378;F;Countryside;Master;2,9;1;Once a week;4;8;9;10;Fail
+379;F;City;Bachelor;2,6;1;Once a week;0;15;15;15;Pass
+380;F;Countryside;Bachelor;5,3;1;Several times a week;17;10;10;10;Fail
+381;M;City;Master;4,5;1;Several times a week;4;15;14;14;Pass
+382;M;Countryside;Secondary education;1,9;1;Once a week;5;7;6;7;Fail
+383;M;City;Secondary education;3,5;1;Once a week;2;11;11;10;Fail
+384;M;Countryside;Primary education;2,3;2;Rarely;0;6;5;0;Fail
+385;M;Countryside;Master;1;2;Once a week;14;6;5;5;Fail
+386;F;Countryside;Secondary education;5;1;Once a week;2;10;9;10;Fail
+387;F;Countryside;Master;2,9;1;Once a week;7;6;5;6;Fail
+388;F;Countryside;Secondary education;5,8;2;Rarely;0;7;5;0;Fail
+389;F;City;Bachelor;4;1;Several times a week;0;7;9;8;Fail
+390;F;City;Primary education;5,6;2;Never;0;6;5;0;Fail
+391;M;City;Secondary education;3,7;3;Several times a week;11;9;9;9;Fail
+392;M;City;Bachelor;3,8;1;Every day;3;14;16;16;Pass
+393;M;Countryside;Primary education;3,4;4;Once a week;3;10;8;7;Fail
+394;M;Countryside;Bachelor;0;1;Never;0;11;12;10;Fail
+395;M;City;Primary education;1,7;1;Once a week;5;8;9;9;Fail
