@@ -21,6 +21,8 @@ from mlxtend.frequent_patterns import fpgrowth                # FP-growth algori
 from mlxtend.frequent_patterns import association_rules       # Association rules
 from mlxtend.preprocessing import TransactionEncoder          # Transaction encoder
 
+# Probability Mass Function (PMF)
+# Cumulative Distribution Function (CDF)
 
 # Binomial distribution
 # binomial.pmf(x,n,p) # x = number of successes | n = number of trials | p = probability of success

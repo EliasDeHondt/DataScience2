@@ -30,10 +30,9 @@ In this document, we will explain the following probability distributions: **bin
 from scipy.stats import binom as binomial # Binomial distribution
 
 n = 5  # Number of trials
+k = 2 # Probability of exactly k successes
 p = 0.3  # Probability of success in each trial
 
-# Probability of exactly k successes
-k = 2
 binomial_pmf = binomial.pmf(k, n, p)
 print(f"Probability of {k} successes: {binomial_pmf:.4f}")
 
@@ -49,11 +48,10 @@ print(f"Probability of {k} successes: {binomial_pmf:.4f}")
 ```python
 from scipy.stats import norm as normal # Normal distribution
 
+x = 60 # Probability of a value less than x
 mean = 50  # Mean
 std_dev = 10  # Standard deviation
 
-# Probability of a value less than 60
-x = 60
 normal_cdf = normal.cdf(x, mean, std_dev)
 print(f"Probability of a value less than {x}: {normal_cdf:.4f}")
 ```
@@ -68,10 +66,9 @@ print(f"Probability of a value less than {x}: {normal_cdf:.4f}")
 ```python
 from scipy.stats import poisson as poisson # Poisson distribution
 
+k = 2 # Probability of exactly k events
 lambda_ = 3  # Average frequency of events
 
-# Probability of exactly 2 events
-k = 2
 poisson_pmf = poisson.pmf(k, lambda_)
 print(f"Probability of {k} events: {poisson_pmf:.4f}")
 ```
