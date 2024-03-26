@@ -23,6 +23,7 @@ from mlxtend.preprocessing import TransactionEncoder          # Transaction enco
 
 # Probability Mass Function (PMF)
 # Cumulative Distribution Function (CDF)
+# The Percentile Point Function (PPF)
 
 # Binomial distribution
 # binomial.pmf(x,n,p) # x = number of successes | n = number of trials | p = probability of success
@@ -37,8 +38,7 @@ from mlxtend.preprocessing import TransactionEncoder          # Transaction enco
 # poisson.mean(λ) # λ = average number of events
 
 # Normal distribution
-# normal.cdf(x,loc,scale) # x = value | loc = average | scale = standard deviation
-# normal.ppf(x,loc,scale) # x = cumulative probability | loc = average | scale = standard deviation
-# normal.std(loc,scale) # loc = average | scale = standard deviation
-# normal.mean(loc,scale) # loc = average | scale = standard deviation
-# normal.ppf(0.025,loc,scale) # loc = average | scale = standard deviation
+# normal.cdf(x,loc,scale) # x = value | loc = average number | scale = standard deviation
+# normal.ppf(y,loc,scale) # y = cumulative probability | loc = average number | scale = standard deviation
+# normal.std(loc,scale) # loc = average number | scale = standard deviation
+# normal.mean(loc,scale) # loc = average number | scale = standard deviation
