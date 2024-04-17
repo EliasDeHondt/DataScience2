@@ -4,22 +4,23 @@
 # @since 01/03/2024        #
 ############################
 
-import math                                                   # Mathematical functions
-import pandas as pd                                           # Data manipulation
-import numpy as np                                            # Scientific computing
-import matplotlib.pyplot as plt                               # Data visualization
-from scipy.stats import binom as binomial                     # Binomial distribution
-from scipy.stats import norm as normal                        # Normal distribution
-from scipy.stats import poisson as poisson                    # Poisson distribution
-from scipy.stats import t as student                          # Student distribution
-from scipy.stats import chi2                                  # Chi-squared distribution
-from scipy.stats import ttest_1samp                           # One-sample t-test
-from scipy.stats import chisquare                             # Chi-squared test
-from scipy.special import comb                                # Combinations
-from mlxtend.frequent_patterns import apriori                 # Apriori algorithm
-from mlxtend.frequent_patterns import fpgrowth                # FP-growth algorithm
-from mlxtend.frequent_patterns import association_rules       # Association rules
-from mlxtend.preprocessing import TransactionEncoder          # Transaction encoder
+import math                                                             # Mathematical functions
+import pandas as pd                                                     # Data manipulation
+import numpy as np                                                      # Scientific computing
+import matplotlib.pyplot as plt                                         # Data visualization
+from scipy.stats import binom as binomial                               # Binomial distribution
+from scipy.stats import norm as normal                                  # Normal distribution
+from scipy.stats import poisson as poisson                              # Poisson distribution
+from scipy.stats import t as student                                    # Student distribution
+from scipy.stats import chi2                                            # Chi-squared distribution
+from scipy.stats import ttest_1samp                                     # One-sample t-test
+from scipy.stats import chisquare                                       # Chi-squared test
+from scipy.special import comb                                          # Combinations
+from mlxtend.frequent_patterns import apriori                           # Apriori algorithm
+from mlxtend.frequent_patterns import fpgrowth                          # FP-growth algorithm
+from mlxtend.frequent_patterns import association_rules                 # Association rules
+from mlxtend.preprocessing import TransactionEncoder                    # Transaction encoder
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis    # Discriminant Analysis
 
 # Probability Mass Function (PMF)
 # Cumulative Distribution Function (CDF)
