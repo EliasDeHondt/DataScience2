@@ -42,6 +42,9 @@ def plot_confidence_interval(population_size, sample_mean, sample_standard_devia
     plt.show()
 
 def LDA_coefficients(X,lda):
+    import numpy as np
+    import pandas as pd
+
     nb_col = X.shape[1]
     matrix= np.zeros((nb_col+1,nb_col), dtype=int)
     Z=pd.DataFrame(data=matrix,columns=X.columns)
@@ -49,7 +52,7 @@ def LDA_coefficients(X,lda):
         Z.iloc[j,j] = 1
     LD = lda.transform(Z)
     nb_funct= LD.shape[1]
-    resultaat = pd.DataFrame();
+    resultaat = pd.DataFrame()
     index = ['const']
     for j in range(0,LD.shape[0]-1):
         index = np.append(index,'C'+str(j+1))
