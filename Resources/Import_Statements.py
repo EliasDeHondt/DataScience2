@@ -22,6 +22,8 @@ from mlxtend.frequent_patterns import association_rules                 # Associ
 from mlxtend.preprocessing import TransactionEncoder                    # Transaction encoder
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis    # Discriminant Analysis
 
+from Resources.Functions import *                                       # Custom functions
+
 # Probability Mass Function (PMF)
 # Cumulative Distribution Function (CDF)
 # The Percentile Point Function (PPF)
