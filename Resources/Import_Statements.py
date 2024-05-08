@@ -21,6 +21,13 @@ from mlxtend.frequent_patterns import fpgrowth                          # FP-gro
 from mlxtend.frequent_patterns import association_rules                 # Association rules
 from mlxtend.preprocessing import TransactionEncoder                    # Transaction encoder
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis    # Discriminant Analysis
+from tensorflow import keras                                            # Deep Learning library
+from tensorflow.keras import Model                                      # Model class
+from tensorflow.keras.layers import Input, Dense, BatchNormalization    # Layers
+from tensorflow.keras.utils import to_categorical                       # One-hot encoding
+from tensorflow. keras.optimizers import Adam                           # Optimizer
+from livelossplot import PlotLossesKeras                                # Live plot
+from keras.utils.vis_utils import plot_model                            # Model plot
 
 from Resources.Functions import *                                       # Custom functions
 
