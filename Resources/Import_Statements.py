@@ -4,32 +4,32 @@
 # @since 01/03/2024        #
 ############################
 
-import math                                                             # Mathematical functions
-import pandas as pd                                                     # Data manipulation
-import numpy as np                                                      # Scientific computing
-import matplotlib.pyplot as plt                                         # Data visualization
-from scipy.stats import binom as binomial                               # Binomial distribution
-from scipy.stats import norm as normal                                  # Normal distribution
-from scipy.stats import poisson as poisson                              # Poisson distribution
-from scipy.stats import t as student                                    # Student distribution
-from scipy.stats import chi2                                            # Chi-squared distribution
-from scipy.stats import ttest_1samp                                     # One-sample t-test
-from scipy.stats import chisquare                                       # Chi-squared test
-from scipy.special import comb                                          # Combinations
-from mlxtend.frequent_patterns import apriori                           # Apriori algorithm
-from mlxtend.frequent_patterns import fpgrowth                          # FP-growth algorithm
-from mlxtend.frequent_patterns import association_rules                 # Association rules
-from mlxtend.preprocessing import TransactionEncoder                    # Transaction encoder
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis    # Discriminant Analysis
-from tensorflow import keras                                            # Deep Learning library
-from tensorflow.keras import Model                                      # Model class
-from tensorflow.keras.layers import Input, Dense, BatchNormalization    # Layers
-from tensorflow.keras.utils import to_categorical                       # One-hot encoding
-from tensorflow. keras.optimizers import Adam                           # Optimizer
-from livelossplot import PlotLossesKeras                                # Live plot
-from keras.utils.vis_utils import plot_model                            # Model plot
-
-from Resources.Functions import *                                       # Custom functions
+import math  # type: ignore                                                           # Mathematical functions
+import pandas as pd  # type: ignore                                                   # Data manipulation
+import numpy as np  # type: ignore                                                    # Scientific computing
+import matplotlib.pyplot as plt  # type: ignore                                       # Data visualization
+from scipy.stats import binom as binomial  # type: ignore                             # Binomial distribution
+from scipy.stats import norm as normal  # type: ignore                                # Normal distribution
+from scipy.stats import poisson as poisson  # type: ignore                            # Poisson distribution
+from scipy.stats import t as student  # type: ignore                                  # Student distribution
+from scipy.stats import chi2  # type: ignore                                          # Chi-squared distribution
+from scipy.stats import ttest_1samp  # type: ignore                                   # One-sample t-test
+from scipy.stats import chisquare  # type: ignore                                     # Chi-squared test
+from scipy.special import comb  # type: ignore                                        # Combinations
+from mlxtend.frequent_patterns import apriori  # type: ignore                         # Apriori algorithm
+from mlxtend.frequent_patterns import fpgrowth  # type: ignore                        # FP-growth algorithm
+from mlxtend.frequent_patterns import association_rules  # type: ignore               # Association rules
+from mlxtend.preprocessing import TransactionEncoder  # type: ignore                  # Transaction encoder
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis  # type: ignore  # Discriminant Analysis
+from tensorflow import keras  # type: ignore                                          # Deep Learning library
+from tensorflow.keras import Model  # type: ignore                                    # Model class
+from tensorflow.keras.layers import Input, Dense, BatchNormalization  # type: ignore  # Layers
+from tensorflow.keras.utils import to_categorical  # type: ignore                     # One-hot encoding
+from tensorflow. keras.optimizers import Adam  # type: ignore                         # Optimizer
+from livelossplot import PlotLossesKeras  # type: ignore                              # Live plot
+import warnings  # type: ignore                                                       # Disable warnings
+from Resources.Functions import *  # type: ignore                                     # Custom functions
+warnings.filterwarnings("ignore")
 
 # Probability Mass Function (PMF)
 # Cumulative Distribution Function (CDF)
