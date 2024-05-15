@@ -29,6 +29,7 @@ from tensorflow. keras.optimizers import Adam  # type: ignore                   
 from livelossplot import PlotLossesKeras  # type: ignore                              # Live plot
 from keras.src.optimizers import RMSprop  # type: ignore                              # Optimizer
 from sklearn.model_selection import train_test_split  # type: ignore                  # Train-test split
+from simanneal import Annealer  # type: ignore                                        # Simulated Annealing
 import warnings  # type: ignore                                                       # Disable warnings
 from Resources.Functions import *  # type: ignore                                     # Custom functions
 warnings.filterwarnings("ignore")
