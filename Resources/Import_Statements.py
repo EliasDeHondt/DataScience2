@@ -4,6 +4,7 @@
 # @since 01/03/2024        #
 ############################
 
+from random import Random  # type: ignore                                             # Random number generator
 import math  # type: ignore                                                           # Mathematical functions
 import pandas as pd  # type: ignore                                                   # Data manipulation
 import numpy as np  # type: ignore                                                    # Scientific computing
