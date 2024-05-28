@@ -188,7 +188,7 @@ def trueFalsef(confusion_matrix, columnnb=0):
     return
 
 
-def accuracyf(confusion_matrix):
+def accuracyf(matrix):
     """
     Calculates the overall accuracy from a confusion matrix.
 
@@ -199,14 +199,14 @@ def accuracyf(confusion_matrix):
     - float: The accuracy of the classification.
 
     Usage:
-    accuracy = accuracyf(confusion_matrix)
+    accuracy = accuracyf(matrix)
     """
     import numpy as np
 
-    return np.diag(confusion_matrix).sum() / confusion_matrix.sum().sum()
+    return np.diag(matrix).sum() / matrix.sum().sum()
 
 
-def precisionf(confusion_matrix):
+def precisionf(matrix):
     """
     Calculates the precision for each class from a confusion matrix.
 
@@ -217,17 +217,17 @@ def precisionf(confusion_matrix):
     - list: A list of precision values for each class.
 
     Usage:
-    precision = precisionf(confusion_matrix)
+    precision = precisionf(matrix)
     """
-    precision = []
-    n = confusion_matrix.shape[1]
+    results = []
+    n = matrix.shape[1]
     for i in range(0, n):
-        TP = confusion_matrix.values[i][i]
-        precision = precision + [TP / confusion_matrix.values[:, i].sum()]
-    return precision
+        TP = matrix.values[i][i]
+        results = results + [TP / matrix.values[:, i].sum()]
+    return results
 
 
-def recallf(confusion_matrix):
+def recallf(matrix):
     """
     Calculates the recall for each class from a confusion matrix.
 
@@ -238,17 +238,17 @@ def recallf(confusion_matrix):
     - list: A list of recall values for each class.
 
     Usage:
-    recall = recallf(confusion_matrix)
+    recall = recallf(matrix)
     """
-    recall = []
-    n = confusion_matrix.shape[0]
+    results = []
+    n = matrix.shape[0]
     for i in range(0, n):
-        TP = confusion_matrix.values[i][i]
-        recall = recall + [TP / confusion_matrix.values[i, :].sum()]
-    return recall
+        TP = matrix.values[i][i]
+        results = results + [TP / matrix.values[i, :].sum()]
+    return results
 
 
-def f_measuref(confusion_matrix, beta):
+def f_measuref(matrix, beta):
     """
     Calculates the F-measure (F1 score) for each class from a confusion matrix using a specified beta value.
 
@@ -260,10 +260,10 @@ def f_measuref(confusion_matrix, beta):
     - list: A list of F-measure values for each class.
 
     Usage:
-    f_measure = f_measuref(confusion_matrix, beta=1)
+    f_measure = f_measuref(matrix, beta=1)
     """
-    precisionarray = precisionf(confusion_matrix)
-    recallarray = recallf(confusion_matrix)
+    precisionarray = precisionf(matrix)
+    recallarray = recallf(matrix)
     fmeasure = []
     n = len(precisionarray)
     for i in range(0, n):
@@ -273,7 +273,7 @@ def f_measuref(confusion_matrix, beta):
     return fmeasure
 
 
-def overview_metrieken(confusion_matrix, beta):
+def overview_metrieken(matrix, beta):
     """
     Provides an overview of classification metrics (precision, recall, F-measure) for each class in a confusion matrix.
 
@@ -285,20 +285,20 @@ def overview_metrieken(confusion_matrix, beta):
     - list: A list containing a dataframe with precision, recall, and F-measure for each class.
 
     Usage:
-    metrics_overview = overview_metrieken(confusion_matrix, beta=1)
+    metrics_overview = overview_metrieken(matrix, beta=1)
     """
     import numpy as np
     import pandas as pd
 
-    overview_1 = np.transpose(precisionf(confusion_matrix))
-    overview_2 = np.transpose(recallf(confusion_matrix))
-    overview_3 = np.transpose(f_measuref(confusion_matrix, beta))
-    overview_table = pd.DataFrame(data=np.array([overview_1, overview_2, overview_3]), columns=confusion_matrix.index)
+    overview_1 = np.transpose(precisionf(matrix))
+    overview_2 = np.transpose(recallf(matrix))
+    overview_3 = np.transpose(f_measuref(matrix, beta))
+    overview_table = pd.DataFrame(data=np.array([overview_1, overview_2, overview_3]), columns=matrix.index)
     overview_table.index = ['precision', 'recall', 'fx']
     return [overview_table]
 
 
-def positiveratesf(confusion_matrix):
+def positiveratesf(matrix):
     """
     Calculates and prints the True Positive Rate (TPR) and False Positive Rate (FPR) for a
     binary classification confusion matrix.
@@ -310,12 +310,12 @@ def positiveratesf(confusion_matrix):
     - None: This function prints the TPR and FPR directly.
 
     Usage:
-    positiveratesf(confusion_matrix)
+    positiveratesf(matrix)
     """
-    if (confusion_matrix.shape[0] == 2) & (confusion_matrix.shape[1] == 2):
-        TPR = confusion_matrix.values[0][0] / confusion_matrix.values[0, :].sum()
+    if (matrix.shape[0] == 2) & (matrix.shape[1] == 2):
+        TPR = matrix.values[0][0] / matrix.values[0, :].sum()
         print('TPR', TPR)
-        FPR = confusion_matrix.values[1][0] / confusion_matrix.values[1, :].sum()
+        FPR = matrix.values[1][0] / matrix.values[1, :].sum()
         print('FPR', FPR)
     return
 
@@ -374,7 +374,7 @@ def plot_rocf(y_true, y_score, title='ROC Curve', **kwargs):
     plt.show()
 
 
-def evaluate_classifier(confusion_matrix, beta=1, threshold=0.9):
+def evaluate_classifier(matrix, beta=1, threshold=0.9):
     """
     Evaluates a classifier based on its confusion matrix and specified threshold for various metrics.
     This function checks if the classifier meets the threshold criteria for accuracy, precision, recall, and F1-score.
@@ -395,21 +395,21 @@ def evaluate_classifier(confusion_matrix, beta=1, threshold=0.9):
     warnings.filterwarnings("ignore")  # Ignoring future dependency warning.
 
     # Calculate TP, TN for each class
-    TP = np.diag(confusion_matrix).sum()
-    TN = np.sum(np.diag(confusion_matrix)) - TP
+    TP = np.diag(matrix).sum()
+    TN = np.sum(np.diag(matrix)) - TP
 
     # Calculate accuracy
-    accuracy = (TP + TN) / confusion_matrix.sum().sum()
+    accuracy = (TP + TN) / matrix.sum().sum()
 
     # Calculate precision
-    n = confusion_matrix.shape[1]
-    precision = [np.diag(confusion_matrix)[i] / np.sum(confusion_matrix.iloc[i, :]) if np.sum(
-        confusion_matrix.iloc[i, :]) > 0 else 0 for i in range(0, n)]
+    n = matrix.shape[1]
+    precision = [np.diag(matrix)[i] / np.sum(matrix.iloc[i, :]) if np.sum(
+        matrix.iloc[i, :]) > 0 else 0 for i in range(0, n)]
 
     # Calculate recall
-    n = confusion_matrix.shape[0]
-    recall = [np.diag(confusion_matrix)[i] / np.sum(confusion_matrix.iloc[:, i]) if np.sum(
-        confusion_matrix.iloc[:, i]) > 0 else 0 for i in range(0, n)]
+    n = matrix.shape[0]
+    recall = [np.diag(matrix)[i] / np.sum(matrix.iloc[:, i]) if np.sum(
+        matrix.iloc[:, i]) > 0 else 0 for i in range(0, n)]
 
     # Calculate F1-score
     f1_score = [((beta ** 2 + 1) * p * r) / ((beta ** 2 * p) + r) if (p + r) > 0 else 0 for p, r in
@@ -418,11 +418,42 @@ def evaluate_classifier(confusion_matrix, beta=1, threshold=0.9):
     # Evaluate classifier (threshold)
     if accuracy >= threshold and all(prec >= threshold for prec in precision) and all(
             rec >= threshold for rec in recall) and all(f1 >= threshold for f1 in f1_score):
-        print(f"This is a good classifier with a threshold of {threshold}")
+        print(f"This is a good classifier with a threshold of {threshold * 100}%")
     else:
-        print(f"This is a bad classifier with a threshold of {threshold}")
+        print(f"This is a bad classifier with a threshold of {threshold * 100}%")
 
     warnings.filterwarnings("default")  # Ignoring future dependency warning.
+
+
+def categorize_variables(df):
+    """
+    Categorize columns in a DataFrame into potential dependent (categorical)
+    and independent (numerical) variables for Discriminant Analysis.
+
+    Parameters:
+    df (pd.DataFrame): The DataFrame containing the data to be analyzed.
+
+    Returns:
+    tuple: A tuple containing two lists:
+        - dependent_vars (list): List of column names suitable as dependent variables (categorical).
+        - independent_vars (list): List of column names suitable as independent variables (numerical).
+    """
+    import warnings
+    import pandas as pd
+    warnings.filterwarnings("ignore")  # Ignoring future dependency warning.
+
+    independentVars = []
+    dependentVars = []
+
+    for col in df.columns:
+        if pd.api.types.is_numeric_dtype(df[col]):
+            independentVars.append(col)
+        elif pd.api.types.is_categorical_dtype(df[col]) or pd.api.types.is_object_dtype(
+                df[col]) or pd.api.types.is_bool_dtype(df[col]):
+            dependentVars.append(col)
+
+    warnings.filterwarnings("default")  # Ignoring future dependency warning.
+    return independentVars, dependentVars
 
 
 def find_best_threshold(y_true, y_score, beta=1):

@@ -26,12 +26,13 @@ from tensorflow import keras  # type: ignore                                    
 from tensorflow.keras import Model  # type: ignore                                    # Model class
 from tensorflow.keras.layers import Input, Dense, BatchNormalization  # type: ignore  # Layers
 from tensorflow.keras.utils import to_categorical  # type: ignore                     # One-hot encoding
-from tensorflow.keras.optimizers import Adam  # type: ignore                         # Optimizer
+from tensorflow.keras.optimizers import Adam  # type: ignore                          # Optimizer
 from livelossplot import PlotLossesKeras  # type: ignore                              # Live plot
 from keras.src.optimizers import RMSprop  # type: ignore                              # Optimizer
 from sklearn.model_selection import train_test_split  # type: ignore                  # Train-test split
+from sklearn.metrics import roc_auc_score # type: ignore                              # ROC AUC score
 from simanneal import Annealer  # type: ignore                                        # Simulated Annealing
-from inspyred import ec  # type: ignore                                                # Evolutionary Computation
+from inspyred import ec  # type: ignore                                               # Evolutionary Computation
 import warnings  # type: ignore                                                       # Disable warnings
 from Resources.Functions import *  # type: ignore                                     # Custom functions
 warnings.filterwarnings("ignore")
