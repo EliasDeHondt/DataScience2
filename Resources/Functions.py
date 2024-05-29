@@ -56,6 +56,8 @@ def no_outliers(data):
     Usage:
     clean_data = no_outliers(data_series)
     """
+    from termcolor import colored
+
     Q1 = data.quantile(0.25)
     Q3 = data.quantile(0.75)
     i = Q3 - Q1
@@ -63,10 +65,10 @@ def no_outliers(data):
     high = Q3 + 1.5 * i
     outliers = data[(data < low) | (data > high)]
 
-    print("Low: ", low)
-    print("High:", high)
-    print("Len: ", len(data))
-    print("Outliers:", outliers.values, "\n")
+    print(colored(f"Low: {low}", "blue"))
+    print(colored(f"High: {high}", "blue"))
+    print(colored(f"Len: {len(data)}", "blue"))
+    print(colored(f"Outliers: { outliers.values}\n", "blue"))
     return data[(data >= low) & (data <= high)]
 
 
@@ -160,7 +162,7 @@ def LDA_coefficients(x, lda):
     return resultaat
 
 
-def trueFalsef(confusion_matrix, columnnb=0):
+def trueFalsef(matrix, columnnb=0):
     """
     Calculates and prints the True Positive (TP), True Negative (TN), False Positive (FP),
     and False Negative (FN) rates from a confusion matrix.
@@ -176,16 +178,42 @@ def trueFalsef(confusion_matrix, columnnb=0):
     trueFalsef(confusion_matrix, columnnb=0)
     """
     import numpy as np
+    from termcolor import colored
 
-    TP = confusion_matrix.values[columnnb][columnnb]
-    print('TP', TP)
-    TN = np.diag(confusion_matrix).sum() - TP
-    print('TN:', TN)
-    FP = confusion_matrix.values[:, columnnb].sum() - TP
-    print('FP:', FP)
-    FN = confusion_matrix.values[columnnb, :].sum() - TP
-    print('FN:', FN)
+    TP = matrix.values[columnnb][columnnb]
+    print(colored(f'TP: {TP}', 'blue'))
+    TN = np.diag(matrix).sum() - TP
+    print(colored(f'TN: {TN}', 'blue'))
+    FP = matrix.values[:, columnnb].sum() - TP
+    print(colored(f'FP: {FP}', 'blue'))
+    FN = matrix.values[columnnb, :].sum() - TP
+    print(colored(f'FN: {FN}', 'blue'))
     return
+
+
+def calculate_confusion_metrics(matrix, class_label):
+    """
+    Calculates the True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN) rates
+    for a specific class from a confusion matrix.
+
+    Parameters:
+    - confusion_matrix (pd.DataFrame): Confusion matrix for the classification.
+    - class_label (str): The label of the class for which to compute the metrics.
+
+    Returns:
+    - tuple: A tuple containing the TP, TN, FP, and FN rates for the specified class.
+
+    Usage:
+    TP, TN, FP, FN = calculate_confusion_metrics(matrix, 'class1')
+    """
+    class_index = matrix.columns.get_loc(class_label)
+    TP = matrix.iloc[class_index, class_index]
+    FP = matrix.iloc[:, class_index].sum() - TP
+    FN = matrix.iloc[class_index, :].sum() - TP
+    total_sum = matrix.values.sum()
+    TN = total_sum - (TP + FP + FN)
+
+    return TP, TN, FP, FN
 
 
 def accuracyf(matrix):
@@ -312,11 +340,13 @@ def positiveratesf(matrix):
     Usage:
     positiveratesf(matrix)
     """
+    from termcolor import colored
+
     if (matrix.shape[0] == 2) & (matrix.shape[1] == 2):
         TPR = matrix.values[0][0] / matrix.values[0, :].sum()
-        print('TPR', TPR)
+        print(colored(f"TPR: {TPR}", "blue"))
         FPR = matrix.values[1][0] / matrix.values[1, :].sum()
-        print('FPR', FPR)
+        print(colored(f"FPR: {FPR}", "blue"))
     return
 
 
@@ -392,6 +422,7 @@ def evaluate_classifier(matrix, beta=1, threshold=0.9):
     """
     import warnings
     import numpy as np
+    from termcolor import colored
     warnings.filterwarnings("ignore")  # Ignoring future dependency warning.
 
     # Calculate TP, TN for each class
@@ -418,9 +449,9 @@ def evaluate_classifier(matrix, beta=1, threshold=0.9):
     # Evaluate classifier (threshold)
     if accuracy >= threshold and all(prec >= threshold for prec in precision) and all(
             rec >= threshold for rec in recall) and all(f1 >= threshold for f1 in f1_score):
-        print(f"This is a good classifier with a threshold of {threshold * 100}%")
+        print(colored(f"This is a good classifier with a threshold of {threshold * 100}%", "blue"))
     else:
-        print(f"This is a bad classifier with a threshold of {threshold * 100}%")
+        print(colored(f"This is a bad classifier with a threshold of {threshold * 100}%", "blue"))
 
     warnings.filterwarnings("default")  # Ignoring future dependency warning.
 

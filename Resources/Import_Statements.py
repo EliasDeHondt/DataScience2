@@ -4,6 +4,7 @@
 # @since 01/03/2024        #
 ############################
 
+from termcolor import colored # type: ignore                                          # Colored text
 from random import Random  # type: ignore                                             # Random number generator
 import math  # type: ignore                                                           # Mathematical functions
 import pandas as pd  # type: ignore                                                   # Data manipulation
@@ -35,7 +36,8 @@ from simanneal import Annealer  # type: ignore                                  
 from inspyred import ec  # type: ignore                                               # Evolutionary Computation
 import warnings  # type: ignore                                                       # Disable warnings
 from Resources.Functions import *  # type: ignore                                     # Custom functions
-warnings.filterwarnings("ignore")
+warnings.filterwarnings("ignore")                                                     # Disable warnings
+outputColor = "blue"                                                                  # Color for the output
 
 # Probability Mass Function (PMF)
 # Cumulative Distribution Function (CDF)
