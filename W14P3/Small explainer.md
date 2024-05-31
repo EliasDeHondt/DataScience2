@@ -35,7 +35,6 @@ p = 0.3  # Probability of success in each trial
 
 binomial_pmf = binomial.pmf(k, n, p)
 print(f"Probability of {k} successes: {binomial_pmf:.4f}")
-
 ```
 
 ## 📊Normale Distribution
@@ -75,4 +74,4 @@ print(f"Probability of {k} events: {poisson_pmf:.4f}")
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
-- 📫 How to reach us eliasdehondt@outlook.com.
+- 📫 How to reach us elias.dehondt@outlook.com.
