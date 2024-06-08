@@ -6,14 +6,14 @@
 1. [📘Table of Contents](#📘table-of-contents)
 2. [🖖Introduction](#🖖introduction)
 3. [📚Theory](#📚theory)
-    1. [🧑‍💻Discriminant analysis](#🧑‍💻discriminant-analysis)
-    2. [📊Evaluation metrics](#📊evaluation-metrics)
+    1. [🧑‍💻Discriminant Analysis](#🧑‍💻discriminant-analysis)
+    2. [📊Evaluation Metrics](#📊evaluation-metrics)
     3. [🤖Neural Networks](#🤖neural-networks)
        1. [🤓Extensive explanation (Out of scope)](#🤓extensive-explanation-out-of-scope)
           1. [Key Concepts in Neural Networks](#key-concepts-in-neural-networks)
           2. [Important Terms and Techniques](#important-terms-and-techniques)
           3. [Hyperparameters and Model Performance](#hyperparameters-and-model-performance)
-    4. [🔭Meta-heuristics](#🔭meta-heuristics)
+    4. [🔭Meta-Heuristics](#🔭meta-heuristics)
 4. [🔗Links](#🔗links)
 
 
@@ -25,7 +25,7 @@ This document contains the theory (P4) of the different topics that are covered 
 
 ## 📚Theory
 
-### 🧑‍💻Discriminant analysis
+### 🧑‍💻Discriminant Analysis
 
 > **NOTE:** See the following directory for more information about the topic: [Discriminant Analysis W19P4](/W19P4)
 
@@ -45,7 +45,7 @@ Summarizing:
 - Descriptive discriminant analysis describes the differences between existing groups.
 - Predictive discriminant analysis predicts the group to which a new observation will belong.
 
-### 📊Evaluation metrics
+### 📊Evaluation Metrics
 
 > **NOTE:** See the following directory for more information about the topic: [Evaluation Metrics W20P4](/W20P4)
 
@@ -165,7 +165,7 @@ A neural network is a series of algorithms designed to recognize underlying rela
 - **Exploding Gradient**:
   - Gradients become excessively large as they propagate back through the network, often due to large weight initialization.
 
-### 🔭Meta-heuristics
+### 🔭Meta-Heuristics
 
 > **NOTE:** See the following directory for more information about the topic: [Meta-heuristics W23P4-W24P4](/W23P4-W24P4)
 
