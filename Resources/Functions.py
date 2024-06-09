@@ -68,7 +68,7 @@ def no_outliers(data):
     print(colored(f"Low: {low}", "blue"))
     print(colored(f"High: {high}", "blue"))
     print(colored(f"Len: {len(data)}", "blue"))
-    print(colored(f"Outliers: { outliers.values}\n", "blue"))
+    print(colored(f"Outliers: {outliers.values}\n", "blue"))
     return data[(data >= low) & (data <= high)]
 
 
@@ -539,3 +539,30 @@ def obj_func(solution, weights):
         if not solution[city * n + city]: break
     return np.sum(solution * weights) if notStayingOK == 0 and all(arriveOK) and all(leaveOK) and loop_length == n \
         else 1000 * n + np.sum(solution * weights)
+
+
+def most_important_variable(independentVariables, dependentVariable):
+    """
+    Finds the most important variable for Linear Discriminant Analysis (LDA) based on the coefficients.
+    This function fits an LDA model and returns the variable with the highest absolute coefficient.
+
+    Parameters:
+    - independent_vars (pd.DataFrame): Input features for LDA.
+    - dependent_var (pd.Series): Target variable for LDA.
+
+    Returns:
+    - pd.Series: A series containing the most important variable and its coefficient.
+
+    Usage:
+    important_var = most_important_variable(independent_vars, dependent_var)
+    """
+    import pandas as pd
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+    lda = LinearDiscriminantAnalysis()
+    lda.fit(independentVariables, dependentVariable)
+    coef_df = pd.DataFrame({'Variable': independentVariables.columns, 'Coefficient': lda.coef_[0]})
+
+    coef_df['Absolute Coefficient'] = coef_df['Coefficient'].abs()
+
+    return coef_df.loc[coef_df['Absolute Coefficient'].idxmax()]
