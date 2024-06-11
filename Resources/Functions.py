@@ -143,22 +143,18 @@ def LDA_coefficients(x, lda):
     nb_col = x.shape[1]
     matrix = np.zeros((nb_col + 1, nb_col), dtype=int)
     Z = pd.DataFrame(data=matrix, columns=x.columns)
-    for j in range(0, nb_col):
+    for j in range(nb_col):
         Z.iloc[j, j] = 1
     LD = lda.transform(Z)
-    # nb_funct = LD.shape[1]
     resultaat = pd.DataFrame()
-    index = ['const']
-    for j in range(0, LD.shape[0] - 1):
-        index = np.append(index, 'C' + str(j + 1))
-    for i in range(0, LD.shape[1]):
-        coef = [LD[-1][i]]
-        for j in range(0, LD.shape[0] - 1):
-            coef = np.append(coef, LD[j][i] - LD[-1][i])
-        result = pd.Series(coef)
-        result.index = index
-        column_name = 'LD' + str(i + 1)
+    index = ['const'] + list(x.columns)
+
+    for i in range(LD.shape[1]):
+        coef = [LD[-1, i]] + list(LD[:-1, i] - LD[-1, i])
+        result = pd.Series(coef, index=index)
+        column_name = f'LD{i + 1}'
         resultaat[column_name] = result
+
     return resultaat
 
 
